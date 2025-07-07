@@ -1,0 +1,21 @@
+
+.profileImgContainer{
+    background-color: rgba(38,38,38,255);
+    border-radius: 0px 50px 0px 24px;
+    width: 300px;
+    align-self: center;
+}
+
+
+.profileImg{
+    width: 300px;
+}
+
+@media screen and (width < 600px) {
+    .profileImg{
+        width: 200px;
+    }
+    .profileImgContainer{
+        width: 200px;
+    }
+}

@@ -1,0 +1,35 @@
+.bio{
+    display: block;
+    text-align: left;
+    width: 60%;
+    margin-left: 20px;
+}
+
+.name{
+    
+    margin-bottom: 3px;
+}
+.name span{
+    background-color: rgba(98,108,98,255);
+}
+.occupation{
+    margin-top: 3px;
+}
+
+.contactInfo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.date, .number, .email{
+    display: flex;
+    align-items: center;
+}
+
+.date img, .number img, .email img{
+    margin-right: 5px;
+}
+
+.location{
+    display: flex;
+}
