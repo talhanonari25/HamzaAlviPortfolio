@@ -1,0 +1,33 @@
+.whatIdoHeading{
+    /* background-color: red; */
+    margin-top: 80px;
+    margin-left: 40px;
+    text-align: left;
+    
+}
+
+.whatIdoHeading span{
+    border-bottom: 4px solid yellow;
+    padding-bottom: 2px;
+}
+
+.rowContainer{
+    margin-top: 50px;
+}
+
+.row1, .row2{
+    margin: 0px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rowItems{
+    display: flex;
+    align-items: center;
+}
+.row-icons{
+    margin-right: 10px;
+}
+.rowItems p{
+    width: 100px;
+}
