@@ -1,0 +1,42 @@
+.myskillHeading{
+    /* background-color: red; */
+    margin-top: 80px;
+    margin-left: 40px;
+    text-align: left;
+}
+
+.myskillHeading span{
+    border-bottom: 4px solid yellow;
+    padding-bottom: 2px;
+}
+
+.skillContainer{
+    display: grid;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+.skillGridItem{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skillsCategory{
+    vertical-align: baseline;
+    transform: rotate(90deg);
+    letter-spacing: 9px;
+        font-size: 1.3rem;
+    opacity: .3;
+}
+
+.barTitle{
+    display: flex;
+    justify-content: space-between;
+}
+
+.barTitle p {
+    margin: 0px;
+}
