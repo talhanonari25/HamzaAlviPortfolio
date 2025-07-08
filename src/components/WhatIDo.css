@@ -12,18 +12,22 @@
 }
 
 .rowContainer{
-    margin-top: 50px;
+    margin-left: 40px;
 }
 
-.row1, .row2{
-    margin: 0px 40px;
+.rowContainer{
+    margin-top: 50px;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    margin-left: 40px;
 }
+
 
 .rowItems{
     display: flex;
     align-items: center;
+    width: 300px;
 }
 .row-icons{
     margin-right: 10px;
@@ -31,3 +35,4 @@
 .rowItems p{
     width: 100px;
 }
+
