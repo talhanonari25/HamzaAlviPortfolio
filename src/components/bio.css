@@ -16,6 +16,13 @@
     margin-top: 3px;
 }
 
+.bioRuler{
+    width: 99%;
+    height: 1px; 
+    background-color: rgba(255, 255, 255, 0.2); 
+    border: none;
+}
+
 .contactInfo{
     display: flex;
     justify-content: space-between;

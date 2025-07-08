@@ -3,6 +3,11 @@ import ProfileImg from './components/ProfileImg'
 import Bio from './components/bio'
 import WhatIDo from './components/WhatIDo'
 import PeopleSaying from './components/peopleSaying'
+import MyResume from './components/MyResume'
+import MySkills from './components/MySkills'
+import Portfolio from './components/Portfolio'
+import GetInTouch from './components/GetInTouch'
+import CredentialAndForm from './components/CredentialAndForm'
 
 function App() {
 
@@ -23,7 +28,12 @@ function App() {
           </div>
 
           <WhatIDo/> {/* what I do page */}
-          <PeopleSaying/>
+          <PeopleSaying/> {/* Testimonials */}
+          <MyResume/> {/* Work Experience and Education */}
+          <MySkills/>
+          <Portfolio/>
+          <GetInTouch/>
+          <CredentialAndForm/>
 
         </div>
       </div>
