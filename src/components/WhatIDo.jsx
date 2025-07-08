@@ -10,16 +10,12 @@ const WhatIDo = () => {
               <Card key={index} name={value.name} imgSrc={value.imgSrc}/>
           </Col>
   })
-  // console.log(newArr)
   return (
     <div>
       <h2 className='whatIdoHeading'><span>What I do</span></h2>
       <div className='rowContainer'>
-        {/* {newArr} */}
         <Row>
           {newArr}
-          
-          
         </Row>
       </div>
     </div>

@@ -1,0 +1,100 @@
+.portfolioContainer{
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: left;
+}
+
+.portfolioHeading{
+    margin-bottom: 10px;
+}
+
+.portfolioBody{
+    margin-top: 40px;
+}
+
+.PortfoliosubHeading{
+    /* background-color: red; */
+}
+
+.PortfoliosubHeading ul{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+.portfolioSubBody{
+    margin-top: 50px;
+}
+
+/* .gutter-row:hover{
+    visibility: hidden;
+}
+
+.portfolioImageContainer:hover{
+    visibility: hidden;
+} */
+
+.portfolioImg{
+    width: 100%;
+    height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* translucent black */
+  backdrop-filter: blur(4px);           /* blur effect */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  transform: translateY(-100%); /* Start above */
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.overlay-bottom{
+    position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* translucent black */
+  backdrop-filter: blur(4px);           /* blur effect */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  transform: translateY(100%); /* Start above */
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.image-wrapper:hover .overlay {
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+.image-wrapper:hover .overlay-bottom{
+    opacity: 0.5;
+  transform: translateY(10%);
+}

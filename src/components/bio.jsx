@@ -12,7 +12,7 @@ const Bio = () => {
                 <h1 className='occupation'>I am a Developer</h1>
             </div>
         </div>
-        <hr style={{width: "99%"}} />
+        <hr className='bioRuler' />
         <div className="contactInfo">
             <h5 className='date'><img src="/icons/calendar.svg" alt="" />19.03.1988</h5>
             <h5 className='number'><img src="/icons/whatsapp.svg" alt="" />987-654-321</h5>
