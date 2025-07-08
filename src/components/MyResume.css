@@ -1,0 +1,193 @@
+.myResumeContainer{
+    /* background-color: red; */
+    margin-top: 80px;
+    text-align: left;
+}
+
+.myResumeHeading{
+    margin-left: 40px;
+    margin-bottom: 2px;
+}
+.rulers{
+}
+
+.leftRuler{
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    margin-top: 14px;
+    width: 30px;
+    height: 1px; 
+    background-color: rgba(255, 255, 255, 0.2); 
+    border: none;
+}
+
+.rightRuler{
+    display: inline-block;
+    position: absolute;
+    width: calc(100% - 90px);
+    right: 0px;
+    margin-top: 14px;
+    height: 1px; 
+    background-color: rgba(255, 255, 255, 0.2); 
+    border: none;
+}
+
+.zigzagUnderline{
+    display: inline-block;
+    position: relative;
+    left: 40px;
+    stroke: #e6ff00;
+}
+
+.workExpriencesContainer{
+    margin-top: 50px;
+}
+
+.workExperienceHeading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: white */
+    /* border: ; */
+}
+
+
+.workExperienceHeading span{
+    background-color: white;
+    padding: 10px 30px;
+    border-radius: 50px;
+}
+
+.workExperienceHeading span span{
+    margin: 0px 8px;
+    color: black;
+    padding: 0px;
+    font-weight:500;
+}
+
+.workExperienceBody{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height:min-content;
+}
+
+.boxContainer{
+    /* width: 40%; */
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 50px;
+    width: 50%;
+}
+
+.box span{
+    color: #e6ff00;
+}
+
+.designation{
+    margin-top: 5px;
+}
+
+
+
+.speech {
+    width: 300px;
+    background: rgba(206, 255, 210, 0.1);
+    padding: 30px;
+    border-radius: 35px;
+    position: relative;
+}
+
+.mini-text{
+    color: #e6ff00;
+}
+
+/* Creates triangular tip on the
+           end, for our speech bubble 
+           with some styling */
+.arrowRight:before {
+    content: "";
+    position: absolute;
+    border-left: 20px solid rgba(206, 255, 210, 0.1);
+    border-right: 20px solid transparent;
+    border-top: 20px solid rgba(206, 255, 210, 0.1);
+    border-bottom: 20px solid transparent;
+    transform: rotate(135deg);
+    right: -20px;
+    top: 58px;
+    
+}
+
+.arrowLeft:before{
+    content: "";
+    position: absolute;
+    border-left: 20px solid rgba(206, 255, 210, 0.1);
+    border-right: 20px solid transparent;
+    border-top: 20px solid rgba(206, 255, 210, 0.1);
+    border-bottom: 20px solid transparent;
+    /* right: -20px; */
+    transform: rotate(-45deg);
+    left: -20px;
+    top: 69px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1px 1fr;
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.divider {
+  background-color: yellow;
+  width: 1px;
+  margin-top: 1px;
+  /* height: 800px; */
+}
+
+.left, .right{
+    margin: 10px auto;
+}
+
+.left div, .right div{
+    margin: 20px 0px;
+}
+
+
+.educationContainer{
+    margin-top: 50px;
+}
+
+.educationHeading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: white */
+    /* border: ; */
+}
+
+
+.educationHeading span{
+    background-color: white;
+    padding: 10px 30px;
+    border-radius: 50px;
+}
+
+.educationHeading span span{
+    margin: 0px 8px;
+    color: black;
+    padding: 0px;
+    font-weight:500;
+}
+
+.workExperienceBody{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height:min-content;
+}
+
