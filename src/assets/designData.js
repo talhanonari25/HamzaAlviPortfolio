@@ -1,14 +1,18 @@
 export const designData = [
     {
-        name: "photoShop",
+        name: "AWS S3",
         completion: '80%'
     },
     {
-        name: "photoShop",
-        completion: '80%'
+        name: "AWS IOT CORE",
+        completion: '75%'
     },
     {
-        name: "photoShop",
-        completion: '80%'
+        name: "HEROKU DEPLOYMENTS",
+        completion: '90%'
+    },
+    {
+        name: "AWS DEPLOYMENTS",
+        completion: '90%'
     }
 ]

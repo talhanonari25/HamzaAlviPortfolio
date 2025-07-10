@@ -1,26 +1,26 @@
 export const data = [
     {
-        name: "website and platforms",
-        imgSrc: "./whatIDoIcons/website.png"
+        name: "REACT",
+        imgSrc: "../src/assets/react.svg"
     },
     {
-        name: "website and platforms",
-        imgSrc: "../src/assets/whatIDoIcons/website.png"
+        name: "HUBSPOT",
+        imgSrc: "../src/assets/whatIDoIcons/hubspot.png"
     },
     {
-        name: "website and platforms",
-        imgSrc: "../src/assets/whatIDoIcons/website.png"
+        name: "RUBY ON RAILS",
+        imgSrc: "../src/assets/whatIDoIcons/rails.png"
     },
     {
-        name: "website and platforms",
-        imgSrc: "../src/assets/whatIDoIcons/website.png"
+        name: "NODE",
+        imgSrc: "../src/assets/whatIDoIcons/node.svg"
     },
     {
-        name: "website and platforms",
-        imgSrc: "../src/assets/whatIDoIcons/website.png"
+        name: "EXPRESS",
+        imgSrc: "../src/assets/whatIDoIcons/expressWithBg.png"
     },
     {
-        name: "website and platforms",
-        imgSrc: "../src/assets/whatIDoIcons/website.png"
+        name: "NEST",
+        imgSrc: "../src/assets/whatIDoIcons/nest.svg"
     },
 ]
