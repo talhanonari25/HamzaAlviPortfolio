@@ -12,8 +12,16 @@
 
 .skillContainer{
     display: grid;
+    /* display: flex; */
     margin-top: 50px;
     margin-left: 40px;
+}
+
+.skills{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
 }
 
 .skillGridItem{
@@ -24,12 +32,28 @@
     justify-content: center;
 }
 
+.gutter-row-inner-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skillGridItem div h3{
+    width:fit-content;
+}
+
 .skillsCategory{
     vertical-align: baseline;
     transform: rotate(90deg);
     letter-spacing: 9px;
         font-size: 1.3rem;
     opacity: .3;
+    text-align: center;
+}
+
+.skill-category-language{
+    margin-bottom: 60px;
 }
 
 .barTitle{

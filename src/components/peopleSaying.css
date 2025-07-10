@@ -45,3 +45,7 @@
     margin-left: 10px;
     text-align: left;
 }
+
+.slick-next, .slick-prev{
+    display: none !important;
+}

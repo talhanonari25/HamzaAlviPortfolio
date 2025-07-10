@@ -36,11 +36,16 @@
     visibility: hidden;
 } */
 
+.portfolioImgContainer{
+  position: relative;
+}
+
 .portfolioImg{
     width: 100%;
     height: 100%;
   object-fit: cover;
   display: block;
+  transition: filter 0.3s ease;
 }
 
 .image-wrapper {
@@ -50,6 +55,11 @@
   overflow: hidden;
 }
 
+.image-wrapper a{
+  color: white !important;
+  text-decoration: none !important;
+}
+
 
 .overlay {
   position: absolute;
@@ -57,8 +67,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4); /* translucent black */
-  backdrop-filter: blur(4px);           /* blur effect */
+  background-color: transparent; 
+  backdrop-filter: none;         
   opacity: 0;
   transition: opacity 0.3s ease;
   z-index: 1;
@@ -72,12 +82,12 @@
 
 .overlay-bottom{
     position: absolute;
-  top: 0;
+  top: 0px;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4); /* translucent black */
-  backdrop-filter: blur(4px);           /* blur effect */
+  background-color: transparent; 
+  backdrop-filter: none;         
   opacity: 0;
   transition: opacity 0.3s ease;
   z-index: 1;
@@ -86,7 +96,7 @@
   flex-direction: column;
   align-items: center;
   transform: translateY(100%); /* Start above */
-  transition: transform 0.4s ease, opacity 0.4s ease;
+  transition: transform 0.4s ease, opacity 0.1s ease;
 }
 
 .image-wrapper:hover .overlay {
@@ -95,6 +105,10 @@
 }
 
 .image-wrapper:hover .overlay-bottom{
-    opacity: 0.5;
+    opacity: 1;
   transform: translateY(10%);
+}
+
+.image-wrapper:hover .portfolioImg {
+  filter: blur(4px) brightness(60%);
 }
