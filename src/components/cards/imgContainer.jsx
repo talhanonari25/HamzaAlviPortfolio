@@ -4,14 +4,16 @@ import img from '../../assets/containImg.jpg'
 
 const style = { padding: '8px 0' };
 
-const imgContainer = () => {
+const imgContainer = ({name, description, imgSrc, websiteURL}) => {
     return (
       
           <Col className="gutter-row image-wrapper" span={8}>
-              <div style={style} className='portfolioImageContainer'><img src={img} alt="" className='portfolioImg'/>
-              <div className="overlay"><p>Branding</p></div>
-              <div className="overlay-bottom"> <p>Bonic Studio</p></div>
+              <a href={websiteURL} target='_blank'>
+                <div style={style} className='portfolioImageContainer'><img src={imgSrc} alt="" className='portfolioImg'/>
+              <div className="overlay"><p style={{fontSize: "16px"}}>{name}</p></div>
+              <div className="overlay-bottom"><p>{description}</p></div>
               </div>
+              </a>
           </Col>
 
     )

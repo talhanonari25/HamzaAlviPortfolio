@@ -5,7 +5,8 @@ const card = ({comment, author}) => {
   return (
 
       <>
-          <Card variant="borderless" style={{ width: 300, backgroundColor: 'rgba(0,0,0,0)' }}>
+          <div>
+            <Card variant="borderless" style={{ width: 300, backgroundColor: 'rgba(0,0,0,0)' }}>
               <div style={{display: "flex"}}>
                 <img src="icons/quotes.svg" alt="" style={{alignSelf: "start"}} />
                 <div className="authorInfo">
@@ -14,7 +15,8 @@ const card = ({comment, author}) => {
                    <h5 style={{color: "white"}}>{author}</h5>
                </div>
               </div>
-          </Card>
+            </Card>
+          </div>
       </>
   )
 }

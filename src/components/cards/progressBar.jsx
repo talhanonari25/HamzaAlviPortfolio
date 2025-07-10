@@ -7,7 +7,7 @@ const progressBar = ({ percentage, name }) => {
     return (
         <Col className="gutter-row" span={5}>
             <div style={style} className='skillGridItem'>
-                <div>
+                <div className='gutter-row-inner-div'>
                     <Flex gap="small" wrap>
                         <Progress type="circle" percent={percentage} strokeColor="yellow"
                             format={percent => (

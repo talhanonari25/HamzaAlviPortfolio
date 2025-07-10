@@ -6,8 +6,8 @@ import PeopleSaying from './components/peopleSaying'
 import MyResume from './components/MyResume'
 import MySkills from './components/MySkills'
 import Portfolio from './components/Portfolio'
-import GetInTouch from './components/GetInTouch'
 import CredentialAndForm from './components/CredentialAndForm'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -15,27 +15,27 @@ function App() {
     <>
       <div className='main'>
         <div className="container">
-          <div> {/* first page */}
+          <div>
             <div className="intro">
               <ProfileImg />
               <Bio />
             </div>
             <div>
               <p className='info'>
-                I'm a Creative Developer for interactive projects that usually are apps, VR and Creative websites. I Spend most of time coding outstanding projects or studying new technologies. to improve my development stack. I develop compelling designs that spring to life using transition and animations that suit my clients, using the most sophisticated technologies available today for fully interactive and responsive websites and apps.
+                I hold a Bachelor's degree in Computer Science from Lahore Garrison University, where I engaged in rigorous academic exploration and practical application of cutting-edge technologies. My insatiable curiosity and innate ability to rapidly grasp complex concepts characterize me as a quick learner. Infused with an unwavering wellspring of energy, I approach challenges with enthusiasm, continuously seeking opportunities to expand my skill set and broaden my horizons. With an unquenchable thirst for knowledge, I am dedicated to embarking on a perpetual journey of learning and skill acquisition.
               </p>
             </div>
           </div>
 
-          <WhatIDo/> {/* what I do page */}
-          <PeopleSaying/> {/* Testimonials */}
-          <MyResume/> {/* Work Experience and Education */}
-          <MySkills/>
-          <Portfolio/>
-          <GetInTouch/>
-          <CredentialAndForm/>
-
+            <WhatIDo/> 
+            <PeopleSaying/>
+            {/*<MyResume/> 
+            <MySkills/>
+            <Portfolio/>
+            <CredentialAndForm/> */}
+          
         </div>
+        {/* <Footer/> */}
       </div>
     </>
   )
