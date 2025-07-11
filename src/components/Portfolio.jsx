@@ -19,7 +19,7 @@ const Portfolio = () => {
             <div className="portfolioBody">
                 
                 <div className="portfolioSubBody">
-                    <Row gutter={[8,0]}>
+                    <Row gutter={[24,8]}>
                         {portfolioData.map((val, i)=>{
                             return <ImgContainer key={i} name={val.name} description={val.description} imgSrc={val.imgSrc} websiteURL={val.websiteURL}/>
                         })}

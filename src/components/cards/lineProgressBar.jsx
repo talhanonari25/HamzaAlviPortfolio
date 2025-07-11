@@ -1,14 +1,14 @@
 import React from "react";
 import { Flex, Progress, Col } from "antd";
 
-const style = { padding: "8px 0", width: "400px" };
+const style = { padding: "8px 0" };
 
 const lineProgressBar = ({ name, completion }) => {
   return (
     <Flex
-      gap="small"
+      gap={"small"}
       vertical
-      style={{ width: "100%", gap: "0px" }}
+      style={{ width: "100%", gap: "0px", marginBottom: "1rem" }}
       strokeWidth={2}
     >
       <div className="barTitle">
@@ -21,7 +21,6 @@ const lineProgressBar = ({ name, completion }) => {
         trailColor="white"
         strokeColor="yellow"
         size={{ height: 5 }}
-        style={{ width: "400px" }}
       />
     </Flex>
   );

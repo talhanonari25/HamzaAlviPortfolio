@@ -6,7 +6,15 @@ const style = { padding: "8px 0" };
 
 const imgContainer = ({ name, description, imgSrc, websiteURL }) => {
   return (
-    <Col className="gutter-row image-wrapper" span={8}>
+    <Col
+      className="gutter-row image-wrapper"
+      span={8}
+      xs={24}
+      sm={24}
+      md={12} 
+      lg={8}
+      xl={8} 
+    >
       <a href={websiteURL} target="_blank">
         <div style={style} className="portfolioImageContainer">
           <img src={imgSrc} alt="" className="portfolioImg" />
