@@ -1,5 +1,4 @@
 .myResumeContainer{
-    /* background-color: red; */
     margin-top: 80px;
     text-align: left;
 }
@@ -48,8 +47,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: white */
-    /* border: ; */
 }
 
 
@@ -75,7 +72,6 @@
 }
 
 .boxContainer{
-    /* width: 40%; */
     display: flex;
     justify-content: center;
     position: relative;
@@ -91,8 +87,6 @@
     margin-top: 5px;
 }
 
-
-
 .speech {
     width: 300px;
     background: rgba(206, 255, 210, 0.1);
@@ -105,9 +99,6 @@
     color: #e6ff00;
 }
 
-/* Creates triangular tip on the
-           end, for our speech bubble 
-           with some styling */
 .arrowRight:before {
     content: "";
     position: absolute;
@@ -128,7 +119,6 @@
     border-right: 20px solid transparent;
     border-top: 20px solid rgba(206, 255, 210, 0.1);
     border-bottom: 20px solid transparent;
-    /* right: -20px; */
     transform: rotate(-45deg);
     left: -20px;
     top: 69px;
@@ -145,7 +135,6 @@
   background-color: yellow;
   width: 1px;
   margin-top: 1px;
-  /* height: 800px; */
 }
 
 .left, .right{
@@ -165,8 +154,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: white */
-    /* border: ; */
 }
 
 

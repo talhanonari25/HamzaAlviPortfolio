@@ -1,0 +1,30 @@
+.footer{
+    background-color: black;
+    display: flex;
+    padding: 0px 40px;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    width: 80%;
+}
+
+.copyright-info{
+    opacity: 0.7;
+}
+
+.copyright-info h5{
+    font-weight: 100;
+}
+
+.socials ul{
+    display: flex;
+    gap: 8px;
+    list-style: none;
+    align-items: center;
+}
+
+.socials ul li{
+    font-weight: 100;
+    opacity: 0.7;
+    font-size: 0.83em;
+}

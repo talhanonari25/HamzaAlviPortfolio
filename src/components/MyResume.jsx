@@ -7,7 +7,6 @@ import { eduData } from '../assets/educationData';
 
 const MyResume = () => {
 
-  // experience data sotring is done below
   let newArr = data.map((val, i)=>{
     return <ExpCard key={i} timeSpan={val.timeSpan} designation={val.designation} mainData={val.mainData} index={i}/>
   })
@@ -19,9 +18,7 @@ const MyResume = () => {
   let evenArr = newArr.filter((val, i)=>{
     return i%2!=0
   })
-  // experience data sorting ends here
 
-  // education data sorting starts from below
   let educationData = eduData.map((val, i)=>{
     return <ExpCard key={i} timeSpan={val.timeSpan} designation={val.designation} mainData={val.mainData} index={i}/>
   })
@@ -33,9 +30,6 @@ const MyResume = () => {
   let evenEduData = educationData.filter((val, i)=>{
     return i%2!=0
   })
-  // education data sorting ends here
-
-  // console.log(eduData)
 
   return (
     <div className="myResumeContainer">
@@ -53,7 +47,6 @@ const MyResume = () => {
           <span>👨&zwj;💻
             <span>Work Experiences</span></span>
         </div>
-{/* divider from geeks for geeks is given below */}
         <div className="grid-container">
           <div className="left">{oddArr}</div>
           <div className="divider"></div>

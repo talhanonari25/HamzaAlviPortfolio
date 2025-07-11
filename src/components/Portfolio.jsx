@@ -2,6 +2,7 @@ import React from 'react'
 import './portfolio.css'
 import ImgContainer from './cards/imgContainer'
 import { Col, Divider, Row } from 'antd';
+import { portfolioData } from '../assets/portfolioData';
 
 const Portfolio = () => {
     return (
@@ -19,15 +20,9 @@ const Portfolio = () => {
                 
                 <div className="portfolioSubBody">
                     <Row gutter={[8,0]}>
-                        <ImgContainer/>
-                        <ImgContainer/>
-                        <ImgContainer/>
-                        <ImgContainer/>
-                        <ImgContainer/>
-                        <ImgContainer/>
-                        <ImgContainer/>
-                        <ImgContainer/>
-                        <ImgContainer/>
+                        {portfolioData.map((val, i)=>{
+                            return <ImgContainer key={i} name={val.name} description={val.description} imgSrc={val.imgSrc} websiteURL={val.websiteURL}/>
+                        })}
                     </Row>
                     
                 </div>

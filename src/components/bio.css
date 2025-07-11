@@ -1,23 +1,30 @@
+
+.greeting{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+
 .bio{
     display: block;
     text-align: left;
-    width: 60%;
     margin-left: 20px;
 }
 
 .name{
-    
+    font-weight: 500;
+    margin-top: 0px;
     margin-bottom: 3px;
-}
-.name span{
-    background-color: rgba(98,108,98,255);
+    font-size: 2.4rem;
+    font-weight: 500;
 }
 .occupation{
     margin-top: 3px;
+    font-size: 2.4rem;
+    font-weight: 500;
 }
 
 .bioRuler{
-    width: 99%;
     height: 1px; 
     background-color: rgba(255, 255, 255, 0.2); 
     border: none;
@@ -26,17 +33,17 @@
 .contactInfo{
     display: flex;
     justify-content: space-between;
+    margin-right: 20px;
+    flex-wrap: wrap;
 }
 
-.date, .number, .email{
+.date, .number, .email, .location{
     display: flex;
     align-items: center;
+    width: 230px;
+    font-weight: 500;
 }
 
-.date img, .number img, .email img{
+.date img, .number img, .email img, .location img{
     margin-right: 5px;
-}
-
-.location{
-    display: flex;
 }
