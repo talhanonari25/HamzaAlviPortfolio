@@ -12,7 +12,6 @@
 .skillContainer{
     display: grid;
     margin-top: 50px;
-    margin-left: 40px;
 }
 
 .skills{
@@ -23,7 +22,7 @@
 }
 
 .skillGridItem{
-    height: 200px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,8 +36,8 @@
     align-items: center;
 }
 
-.skillGridItem div h3{
-    width:fit-content;
+.circleProgressLabel{
+    font-weight: 500;
 }
 
 .skillsCategory{
@@ -61,4 +60,26 @@
 
 .barTitle p {
     margin: 0px;
+}
+
+@media screen and (width < 470px) {
+    .skills{
+      align-items: start;
+    }
+
+  .circleProgress .ant-progress-text {
+    font-size: 12px !important;
+  }
+
+  .circleProgressLabel{
+    font-size: smaller;
+  }
+  
+}
+
+@media screen and (width < 768px) {
+    .codingSection{
+        margin-top: 70px;
+    }
+  
 }

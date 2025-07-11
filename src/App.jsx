@@ -31,11 +31,11 @@ function App() {
             <PeopleSaying/>
             <MyResume/> 
             <MySkills/>
-            <Portfolio/>
-            <CredentialAndForm/>
+             <Portfolio/>
+            {/*<CredentialAndForm/> */}
           
         </div>
-        <Footer/>
+        {/* <Footer/> */}
       </div>
     </>
   )
