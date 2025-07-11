@@ -32,10 +32,6 @@ const Bio = () => {
                 <h5 className='email'><img src="/icons/atTheRate.png" style={{ width: "24px" }} alt="" />m.hamzaalvi719@gmail.com</h5>
                 <h5 className='location'><img src="/icons/location.svg" alt="" />Lahore, Pakistan</h5>
             </div>
-            {/* <div className="location">
-                
-                <h5><img src="/icons/location.svg" alt="" />New york, London</h5>
-            </div> */}
         </div>
     )
 }

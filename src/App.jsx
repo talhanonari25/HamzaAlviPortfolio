@@ -29,13 +29,13 @@ function App() {
 
             <WhatIDo/> 
             <PeopleSaying/>
-            {/*<MyResume/> 
+            <MyResume/> 
             <MySkills/>
             <Portfolio/>
-            <CredentialAndForm/> */}
+            <CredentialAndForm/>
           
         </div>
-        {/* <Footer/> */}
+        <Footer/>
       </div>
     </>
   )

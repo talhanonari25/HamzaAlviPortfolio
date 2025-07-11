@@ -17,7 +17,11 @@ export const data = [
     },
     {
         name: "EXPRESS",
-        imgSrc: "../src/assets/whatIDoIcons/expressWithBg.png"
+        imgSrc: "../src/assets/whatIDoIcons/express.png"
+    },
+    {
+        name: "NEXT",
+        imgSrc: "../src/assets/whatIDoIcons/next.png"
     },
     {
         name: "NEST",

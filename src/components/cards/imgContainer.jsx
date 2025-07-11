@@ -1,22 +1,25 @@
-import React from 'react'
-import { Col, Divider, Row } from 'antd';
-import img from '../../assets/containImg.jpg'
+import React from "react";
+import { Col, Divider, Row } from "antd";
+import img from "../../assets/containImg.jpg";
 
-const style = { padding: '8px 0' };
+const style = { padding: "8px 0" };
 
-const imgContainer = ({name, description, imgSrc, websiteURL}) => {
-    return (
-      
-          <Col className="gutter-row image-wrapper" span={8}>
-              <a href={websiteURL} target='_blank'>
-                <div style={style} className='portfolioImageContainer'><img src={imgSrc} alt="" className='portfolioImg'/>
-              <div className="overlay"><p style={{fontSize: "16px"}}>{name}</p></div>
-              <div className="overlay-bottom"><p>{description}</p></div>
-              </div>
-              </a>
-          </Col>
+const imgContainer = ({ name, description, imgSrc, websiteURL }) => {
+  return (
+    <Col className="gutter-row image-wrapper" span={8}>
+      <a href={websiteURL} target="_blank">
+        <div style={style} className="portfolioImageContainer">
+          <img src={imgSrc} alt="" className="portfolioImg" />
+          <div className="overlay">
+            <p style={{ fontSize: "16px" }}>{name}</p>
+          </div>
+          <div className="overlay-bottom">
+            <p>{description}</p>
+          </div>
+        </div>
+      </a>
+    </Col>
+  );
+};
 
-    )
-}
-
-export default imgContainer
+export default imgContainer;

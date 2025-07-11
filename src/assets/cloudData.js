@@ -1,4 +1,4 @@
-export const designData = [
+export const cloudData = [
     {
         name: "AWS S3",
         completion: '80%'

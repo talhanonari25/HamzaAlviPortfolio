@@ -9,8 +9,8 @@
 }
 
 .profileImg{
-    height: 45vh; /* full viewport height */
-    width: 280px;   /* keep width proportional (or use 100% for full width) */
+    height: 45vh; 
+    width: 280px;   
 }
 
 .social-icons{

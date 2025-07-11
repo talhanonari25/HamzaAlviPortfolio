@@ -1,5 +1,4 @@
 .whatIdoHeading{
-    /* background-color: red; */
     margin-top: 80px;
     margin-left: 40px;
     text-align: left;
@@ -22,7 +21,6 @@
     flex-wrap: wrap;
     margin-left: 40px;
 }
-
 
 .rowItems{
     display: flex;
