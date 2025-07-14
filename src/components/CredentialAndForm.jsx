@@ -57,12 +57,9 @@ const CredentialAndForm = () => {
           <p className="info-title">Follow us</p>
           <div className="form-social-info" style={{ width: '70%' }}>
             <ul>
-              <li>Facebook.</li>
-              <li>Facebook.</li>
-              <li>Facebook.</li>
-              <li>Facebook.</li>
-              <li>Facebook.</li>
-              <li>Facebook.</li>
+              <li><a href="https://www.facebook.com/hamza.alvi.9" target='_blank' className='credential-link' style={{textDecoration: "none", color:"white"}}>Facebook</a></li>
+              <li><a href="https://www.linkedin.com/in/hamza-alvi-378baa1ab" target='_blank' className='credential-link' style={{textDecoration: "none", color:"white"}}>Linked In</a></li>
+              <li><a href="https://github.com/Hamza719alvi" target='_blank' className='credential-link' style={{textDecoration: "none", color:"white"}}>Github</a></li>
             </ul>
           </div>
         </div>
@@ -78,7 +75,7 @@ const CredentialAndForm = () => {
             maxLength={200}
             name='message'
             value={formData.message}
-            placeholder="Message"
+            placeholder="Tell me about your projects"
             className='custom-input custom-textarea'
             style={{ height: 120, resize: 'none', borderBottom: "1px solid white", borderRadius: '0px' }}
             onChange={handleChange}

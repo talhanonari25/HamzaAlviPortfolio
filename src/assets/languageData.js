@@ -12,7 +12,7 @@ export const languageData = [
         name: 'NODE'
     },
     {
-        percentage: 60,
+        percentage: 75,
         name: 'REACT JS'
     },
     {

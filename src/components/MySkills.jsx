@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./MySkills.css";
 import { Col, Divider, Row } from "antd";
 import ProgressBar from "./cards/progressBar";
@@ -22,6 +22,7 @@ let codignArr = codingData.map((val, i) => {
 });
 
 const MySkills = () => {
+
   return (
     <div>
       <h2 className="myskillHeading">
