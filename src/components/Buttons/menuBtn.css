@@ -1,0 +1,99 @@
+
+.menu-btn-container{
+  position: fixed;
+  right: 12vw;
+  top: 70px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  
+}
+
+.menu-button {
+  background-color: yellow;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  cursor: pointer;
+  border: none;
+  padding-right: 11px;
+  align-self: flex-end;
+}
+
+.lineStyle {
+  background-color: #000;
+  height: 4px;
+  width: 16px;
+  margin: 4px 0;
+  border-radius: 2px;
+  align-self: end;
+}
+
+.secondLineStyle {
+  background-color: #000;
+  height: 2px;
+  width: 20px;
+  margin: 0;
+  border-radius: 2px;
+}
+
+.move-right{
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+.move-left{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.no-display{
+    display: none;
+}
+
+.menu-items-container{
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.menu-items{
+    color: white;
+    text-decoration: none;
+    margin: 0px 0px;
+    text-align: right;
+    cursor: pointer;
+}
+
+.menu-items:hover{
+    color: yellow;
+}
+
+@media screen and (width < 576px) {
+    .menu-button{
+      right: 10vw !important;
+    }
+}
+
+@media screen and (width >= 576px) and (width < 768px) {
+    .menu-button{
+      right: 12vw !important;
+    }
+}
+
+@media screen and (width > 1200px) and (width < 1800px) {
+  .menu-button{
+    right: 15vw !important;
+    top: 100px !important;
+  }
+}
+
+@media screen and (width > 1800px) {
+  .menu-button{
+    right: 20vw !important;
+    top: 100px !important;
+  }
+}

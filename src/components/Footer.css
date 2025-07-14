@@ -1,19 +1,21 @@
 .footer{
     background-color: black;
-    display: flex;
-    padding: 0px 40px;
-    justify-content: space-between;
-    align-items: center;
     color: white;
-    width: 80%;
+    width: 80vw;
+    margin-bottom: 5%;
+    max-width: 1200px;
 }
 
-.copyright-info{
-    opacity: 0.7;
+.inner-footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 20px;
 }
 
 .copyright-info h5{
-    font-weight: 100;
+    font-weight: 200;
+    font-size: 0.83em;
 }
 
 .socials ul{
@@ -24,7 +26,37 @@
 }
 
 .socials ul li{
-    font-weight: 100;
-    opacity: 0.7;
+    font-weight: 200;
     font-size: 0.83em;
+}
+
+.footer-link:hover{
+    color: yellow !important;
+}
+
+@media screen and (width < 700px) {
+    .inner-footer-container{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .inner-footer-container div{
+        height: 3rem;
+    }
+}
+
+@media screen and (width < 600px) {
+    .footer{
+      width: 90%;
+    }
+}
+
+@media screen and (width < 345px) {
+    .socials ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .socials{
+        height: 5rem !important;
+    }
 }
