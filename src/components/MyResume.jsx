@@ -27,17 +27,12 @@ const MyResume = () => {
             <span>Work Experiences</span>
           </span>
         </div>
-        {/* <div className="grid-container">
-          <div className="left">{oddArr}</div>
-          <div className="divider"></div>
-          <div className="right">{evenArr}</div>
-        </div> */}
         <div className="timeline-container">
           <div className="timeline-line" />
           {data.map((item, index) => (
             <ExpCard
-              key={index}
               index={index}
+              key={index}
               timeSpan={item.timeSpan}
               designation={item.designation}
               mainData={item.mainData}

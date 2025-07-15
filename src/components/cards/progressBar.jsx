@@ -1,6 +1,6 @@
 import React from 'react'
 import { Flex, Progress, Col, Grid   } from 'antd';
-    const { useBreakpoint } = Grid;
+const { useBreakpoint } = Grid;
 const style = { padding: '8px 0' };
 
 const progressBar = ({ percentage, name }) => {
