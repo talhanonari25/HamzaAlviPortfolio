@@ -1,9 +1,9 @@
 .footer{
     background-color: black;
     color: white;
-    width: 80vw;
+    width: 90vw;
     margin-bottom: 5%;
-    max-width: 1200px;
+    max-width: 1400px;
 }
 
 .inner-footer-container{
@@ -44,11 +44,11 @@
     }
 }
 
-@media screen and (width < 600px) {
+/* @media screen and (width < 600px) {
     .footer{
       width: 90%;
     }
-}
+} */
 
 @media screen and (width < 345px) {
     .socials ul{
