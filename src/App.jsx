@@ -1,5 +1,5 @@
 import "./App.css";
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Element } from "react-scroll";
 import Home from "./components/Home";
 import WhatIDo from "./components/WhatIDo";
@@ -10,49 +10,82 @@ import MySkills from "./components/MySkills";
 import Portfolio from "./components/Portfolio";
 import CredentialAndForm from "./components/CredentialAndForm";
 import Footer from "./components/Footer";
-
+import { motion } from "framer-motion";
 
 function App() {
-  const [filter, setFilter] = useState(false)
-  const [loaded, setLoad] = useState(false)
+  const [filter, setFilter] = useState(false); //for on click of the menu button
+  const [loaded, setLoad] = useState(false); // page loaded successfully or not
+  const [loaderPageUp, setLoaderPageUp] = useState(false)
 
   useEffect(() => {
+    // for the loading of the page
     const handleLoad = () => {
-      setTimeout(()=>{
-        setLoad(true)
-      }, 3000)
+      setLoad(true)
+      setInterval(()=>{
+        setLoaderPageUp(true)
+      }, 2000)
     };
 
     if (document.readyState === "complete") {
-      handleLoad(); // page already loaded
+      handleLoad();
     } else {
       window.addEventListener("load", handleLoad);
       return () => window.removeEventListener("load", handleLoad);
     }
 
     return () => {
-      window.removeEventListener('load', handleLoad);
+      window.removeEventListener("load", handleLoad);
     };
   }, []);
 
   return (
     <>
-      <div className={`loader ${loaded ? 'page-loaded': ''}`}>
-        
+      <div className={`loader ${loaderPageUp ? "page-loaded" : ""}`}>
+        <motion.svg width="116" height="115" className="loader-ring">
+          <motion.circle
+            cx="58"
+            cy="58"
+            r="48"
+            stroke="#FFFF00"
+            strokeWidth="2"
+            fill="none"
+            initial={{ pathLength: 0 }}
+            animate={loaded ? {pathLength: 1} : {pathLength: 0}}
+            transition={{ duration: 2, ease: "easeOut" }}
+          />
+        </motion.svg>
+        <img src="/logo.png" alt="" className={`loader-img`}/>
       </div>
-      {loaded && <><MenuButton filter={filter} setFilter={setFilter}/>
-      <div className={`main ${filter && 'filter-is-on'}`}>
-        <div className="container">
-          <Element name="home"><Home/></Element>
-          <WhatIDo />
-          <PeopleSaying />
-          <Element name="resume"><MyResume /></Element>
-          <MySkills />
-          <Element name="portfolio"><Portfolio /></Element>
-          <Element name="contact"><CredentialAndForm /></Element>
-        </div>
-        <Footer />
-      </div></>}
+      {loaderPageUp && (
+        <>
+          <div className={`main`}>
+            <div className="container">
+              <div
+                className={`low-brightness-overlay ${
+                  filter ? "filter-is-on" : ""
+                }`}
+              ></div>
+              <MenuButton filter={filter} setFilter={setFilter} />
+              <Element name="home">
+                <Home />
+              </Element>
+              <WhatIDo />
+              {/* <PeopleSaying /> */}
+              <Element name="resume">
+                <MyResume />
+              </Element>
+              <MySkills />
+              <Element name="portfolio">
+                <Portfolio />
+              </Element>
+              <Element name="contact">
+                <CredentialAndForm />
+              </Element>
+            </div>
+            <Footer />
+          </div>
+        </>
+      )}
     </>
   );
 }

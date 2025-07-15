@@ -1,10 +1,35 @@
-import React from 'react'
-import { Flex, Progress, Col, Grid   } from 'antd';
+import React, { useState, useEffect } from "react";
+import { Flex, Progress, Col, Grid } from "antd";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
 const { useBreakpoint } = Grid;
-const style = { padding: '8px 0' };
+const style = { padding: "8px 0" };
 
 const progressBar = ({ percentage, name }) => {
-    const screens = useBreakpoint();
+  const [percent, setPercent] = useState(0);
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+
+  useEffect(() => {
+    const interval = setInterval(() => { // for animation of progressbar
+      if(inView){
+        setPercent((prev) => {
+        if (prev >= percentage) {
+          clearInterval(interval);
+          return percentage;
+        }
+        return prev + 1;
+        });
+      }
+      
+    }, 15); 
+  }, [percentage, inView]);
+
+  //for dynamic sizes of progress bars
+  const screens = useBreakpoint();
 
   // Define custom sizes based on breakpoint
   const getSize = () => {
@@ -15,26 +40,29 @@ const progressBar = ({ percentage, name }) => {
     if (screens.xs) return 60;
     return 60;
   };
-    return (
-      <Col className="gutter-row" span={5} xs={12} sm={12} md={8} lg={6}>
-        <div style={style} className="skillGridItem">
-          <div className="gutter-row-inner-div">
-            <Flex gap="small" wrap style={{width: "80%"}}>
+
+  return (
+      <div style={style} ref={ref} className="skillGridItem circle-skill-grid-item">
+        <div className="gutter-row-inner-div">
+          <Flex gap="small" wrap style={{ width: "80%" }}>
+            <motion.div
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+            >
               <Progress
                 type="circle"
-                percent={percentage}
+                percent={percent}
                 strokeColor="yellow"
-                format={(percent) => (
-                  <span style={{ color: "white" }}>{percent}%</span>
-                )}
+                format={(p) => <span style={{ color: "white" }}>{p}%</span>}
                 size={getSize()}
               />
-            </Flex>
-            <h3 className='circleProgressLabel'>{name}</h3>
-          </div>    
+            </motion.div>
+          </Flex>
+          <h3 className="circleProgressLabel">{name}</h3>
         </div>
-      </Col>
-    );
-}
+      </div>
+  );
+};
 
-export default progressBar
+export default progressBar;

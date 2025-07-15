@@ -4,8 +4,18 @@ import { Divider } from "antd";
 import ExpCard from "./cards/expCard";
 import { data } from "../assets/expData";
 import { eduData } from "../assets/educationData";
+import { useInView } from "react-intersection-observer";
 
 const MyResume = () => {
+  const { ref:ref1, inView:inView1 } = useInView({  // for work experience
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+
+  const { ref:ref2, inView:inView2 } = useInView({  // for education
+    triggerOnce: true,
+    threshold: 0.2,
+  });
 
   return (
     <div className="myResumeContainer">
@@ -27,7 +37,7 @@ const MyResume = () => {
             <span>Work Experiences</span>
           </span>
         </div>
-        <div className="timeline-container">
+        <div className="timeline-container" ref={ref1}>
           <div className="timeline-line" />
           {data.map((item, index) => (
             <ExpCard
@@ -37,6 +47,7 @@ const MyResume = () => {
               designation={item.designation}
               mainData={item.mainData}
               position={item.position}
+              inView={inView1}
             />
           ))}
         </div>
@@ -48,7 +59,7 @@ const MyResume = () => {
             🎓 <span>Education</span>
           </span>
         </div>
-        <div className="timeline-container">
+        <div className="timeline-container" ref={ref2}>
           <div className="timeline-line" />
           {eduData.map((val, i) => (
             <ExpCard
@@ -58,6 +69,7 @@ const MyResume = () => {
               mainData={val.mainData}
               index={i}
               position={val.position}
+              inView={inView2}
             />
           ))}
         </div>

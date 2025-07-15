@@ -11,13 +11,13 @@ const style = { padding: "8px 0" };
 
 let cloudArr = cloudData.map((val, i) => {
   return (
-    <LineProgressBar name={val.name} key={i} completion={val.completion} />
+    <LineProgressBar name={val.name} key={i} percentage={val.completion} />
   );
 });
 
 let codignArr = codingData.map((val, i) => {
   return (
-    <LineProgressBar name={val.name} key={i} completion={val.completion} />
+    <LineProgressBar name={val.name} key={i} percentage={val.completion} />
   );
 });
 
@@ -30,26 +30,28 @@ const MySkills = () => {
       </h2>
       <div className="skillContainer">
         <div className="skills">
-          <div style={{ width: "10%" }} className="skillLabel">
-            <h2 className="skillsCategory skill-category-language">LANGUAGE</h2>
-          </div>
-          <Row gutter={16}>
+          <div style={{width: '10%'}} className="skillGridItem prg-lang-container">
+              <h2 className="skillsCategory">PROGRAMMING LANGUAGE</h2>
+            </div>
+          <Row gutter={[8,4]}>
             {languageData.map((val, i) => {
               return (
-                <ProgressBar
-                  key={i}
-                  percentage={val.percentage}
-                  name={val.name}
-                />
+                <Col xs={7} sm={5} md={4} lg={4} style={{marginLeft: "30px"}}>
+                  <ProgressBar
+                    key={i}
+                    percentage={val.percentage}
+                    name={val.name}
+                  />
+                </Col>
               );
             })}
           </Row>
         </div>
         <hr className="bioRuler" style={{ margin: "40px 40px" }} />
 
-        <Row gutter={16} style={{marginRight: "0px"}}>
-          <Col className="gutter-row" span={2} xs={4} sm={4} md={3} lg={3}>
-            <div style={style} className="skillGridItem">
+        <Row gutter={25} className="line-progress-bar-grid-container">
+          <Col className="gutter-row" span={4} xs={4} sm={4} md={3} lg={3}>
+            <div style={style} className="skillGridItem prg-lang-container">
               <h2 className="skillsCategory">Cloud Services</h2>
             </div>
           </Col>
