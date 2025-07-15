@@ -1,34 +1,34 @@
 export const languageData = [
     {
         percentage: 90,
-        name: 'RUBY'
-    },
-    {
-        percentage: 90,
-        name: 'RUBY ON RAILS'
+        name: 'REACT JS'
     },
     {
         percentage: 90,
         name: 'NODE'
     },
     {
-        percentage: 75,
-        name: 'REACT JS'
+        percentage:80,
+        name: 'EXPRESS'
+    },
+    {
+        percentage:80,
+        name: 'MONGO DB'
+    },
+    {
+        percentage:75,
+        name: 'POSTGRESSQL'
     },
     {
         percentage: 90,
         name: 'HUBSPOT'
     },
     {
-        percentage:80,
-        name: 'EXPRESS'
+        percentage: 90,
+        name: 'RUBY'
     },
     {
-        percentage:60,
-        name: 'POSTGRESSQL'
-    },
-    {
-        percentage:80,
-        name: 'MONGO DB'
+        percentage: 90,
+        name: 'RUBY ON RAILS'
     },
 ]
