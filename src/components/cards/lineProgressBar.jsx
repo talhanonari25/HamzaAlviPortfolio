@@ -13,7 +13,7 @@ const lineProgressBar = ({ name, percentage }) => {
     });
 
   useEffect(() => {
-      const interval = setInterval(() => { // for animation of progressbar
+      const interval = setInterval(() => {
         if(inView){
           setPercent((prev) => {
           if (prev >= percentage) {
@@ -32,11 +32,11 @@ const lineProgressBar = ({ name, percentage }) => {
       gap={"small"}
       vertical
       style={{
-        width: "85%",
         gap: "0px",
         marginBottom: "1rem",
         marginRight: "10px",
       }}
+      className="lineProgressBar-container"
     >
       <div className="barTitle">
         <p>{name}</p>

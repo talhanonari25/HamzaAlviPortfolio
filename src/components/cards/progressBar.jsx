@@ -14,7 +14,7 @@ const progressBar = ({ percentage, name }) => {
   });
 
   useEffect(() => {
-    const interval = setInterval(() => { // for animation of progressbar
+    const interval = setInterval(() => {
       if(inView){
         setPercent((prev) => {
         if (prev >= percentage) {
@@ -28,10 +28,8 @@ const progressBar = ({ percentage, name }) => {
     }, 15); 
   }, [percentage, inView]);
 
-  //for dynamic sizes of progress bars
   const screens = useBreakpoint();
 
-  // Define custom sizes based on breakpoint
   const getSize = () => {
     if (screens.xl) return 120;
     if (screens.lg) return 120;
