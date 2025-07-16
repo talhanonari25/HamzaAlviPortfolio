@@ -72,28 +72,7 @@
     color: yellow;
 }
 
-/* @media screen and (width < 576px) {
-    .menu-button{
-      right: 10vw !important;
-    }
+.isActive{
+  color: yellow !important;
+  text-decoration: line-through;
 }
-
-@media screen and (width >= 576px) and (width < 768px) {
-    .menu-button{
-      right: 12vw !important;
-    }
-}
-
-@media screen and (width > 1200px) and (width < 1800px) {
-  .menu-button{
-    right: 15vw !important;
-    top: 100px !important;
-  }
-}
-
-@media screen and (width > 1800px) {
-  .menu-button{
-    right: 20vw !important;
-    top: 100px !important;
-  }
-} */

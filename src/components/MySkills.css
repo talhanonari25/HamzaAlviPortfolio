@@ -67,6 +67,16 @@
     margin-left: 35px !important;
 }
 
+.lineProgressBar-container{
+    width: 75%;
+}
+
+@media screen and (width < 355px) {
+    .lineProgressBar-container{
+        width: 58%;
+    }
+}
+
 @media screen and (width < 470px) {
     .skills{
       align-items: start;

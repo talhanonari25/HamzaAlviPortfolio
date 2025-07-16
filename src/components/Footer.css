@@ -44,12 +44,6 @@
     }
 }
 
-/* @media screen and (width < 600px) {
-    .footer{
-      width: 90%;
-    }
-} */
-
 @media screen and (width < 345px) {
     .socials ul{
         display: flex;
