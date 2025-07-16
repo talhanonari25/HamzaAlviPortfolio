@@ -36,9 +36,9 @@ const MySkills = () => {
           <Row gutter={[8,4]}>
             {languageData.map((val, i) => {
               return (
-                <Col xs={7} sm={5} md={4} lg={4} style={{marginLeft: "30px"}}>
+                <Col xs={7} sm={5} md={4} lg={4} 
+                    key={i} style={{marginLeft: "30px"}}>
                   <ProgressBar
-                    key={i}
                     percentage={val.percentage}
                     name={val.name}
                   />

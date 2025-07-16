@@ -5,20 +5,21 @@ import ExpCard from "./cards/expCard";
 import { data } from "../assets/expData";
 import { eduData } from "../assets/educationData";
 import { useInView } from "react-intersection-observer";
+import MySkills from "./MySkills";
 
-const MyResume = () => {
-  const { ref:ref1, inView:inView1 } = useInView({  // for work experience
+const MyResume = ({resumeElementRef}) => {
+  const { ref:ref1, inView:inView1 } = useInView({ 
     triggerOnce: true,
     threshold: 0.2,
   });
 
-  const { ref:ref2, inView:inView2 } = useInView({  // for education
+  const { ref:ref2, inView:inView2 } = useInView({ 
     triggerOnce: true,
     threshold: 0.2,
   });
 
   return (
-    <div className="myResumeContainer">
+    <div className="myResumeContainer" ref={resumeElementRef}>
       <h2 className="myResumeHeading">
         <span>My</span> Resume
       </h2>
@@ -74,6 +75,7 @@ const MyResume = () => {
           ))}
         </div>
       </div>
+      <MySkills/>
     </div>
   );
 };

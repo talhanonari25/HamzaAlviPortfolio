@@ -9,7 +9,7 @@ message.config({
 
 const { TextArea } = Input;
 
-const CredentialAndForm = () => {
+const CredentialAndForm = ({contactElementRef}) => {
     const [formData, setFormData] = useState({
         name: "",
         email: "",
@@ -43,7 +43,7 @@ const CredentialAndForm = () => {
     }
   
   return (
-    <div className="CredentialAndFormContainer">
+    <div className="CredentialAndFormContainer" ref={contactElementRef}>
       <div className="credentials">
         <div className="form-email">
           <p className='info-title'>Write me</p>

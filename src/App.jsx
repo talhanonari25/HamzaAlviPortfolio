@@ -2,23 +2,35 @@ import "./App.css";
 import { useState, useEffect } from "react";
 import { Element } from "react-scroll";
 import Home from "./components/Home";
-import WhatIDo from "./components/WhatIDo";
-import PeopleSaying from "./components/peopleSaying";
+// import PeopleSaying from "./components/peopleSaying";
 import MyResume from "./components/MyResume";
 import MenuButton from "./components/Buttons/menuBtn";
-import MySkills from "./components/MySkills";
 import Portfolio from "./components/Portfolio";
 import CredentialAndForm from "./components/CredentialAndForm";
 import Footer from "./components/Footer";
 import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 function App() {
-  const [filter, setFilter] = useState(false); //for on click of the menu button
-  const [loaded, setLoad] = useState(false); // page loaded successfully or not
+  const [filter, setFilter] = useState(false);
+  const [loaded, setLoad] = useState(false); 
   const [loaderPageUp, setLoaderPageUp] = useState(false)
 
+  const {ref:homeElementRef, inView:homeElementInView} = useInView({
+    threshold: 0.1
+  })
+  const {ref:resumeElementRef, inView:resumeElementInView} = useInView({
+    threshold: 0.1
+  })
+  const {ref:portfolioElementRef, inView:portfolioElementInView} = useInView({
+    threshold: 0.5
+  })
+  const {ref:contactElementRef, inView:contactElementInView} = useInView({
+    threshold: 0.5
+  })
+
   useEffect(() => {
-    // for the loading of the page
+    console.log(homeElementInView)
     const handleLoad = () => {
       setLoad(true)
       setInterval(()=>{
@@ -65,21 +77,21 @@ function App() {
                   filter ? "filter-is-on" : ""
                 }`}
               ></div>
-              <MenuButton filter={filter} setFilter={setFilter} />
+              <MenuButton filter={filter} setFilter={setFilter} homeElementInView={homeElementInView} 
+              resumeElementInView={resumeElementInView} portfolioElementInView={portfolioElementInView}
+              contactElementInView={contactElementInView}/>
               <Element name="home">
-                <Home />
+                <Home homeElementRef={homeElementRef}/>
               </Element>
-              <WhatIDo />
               {/* <PeopleSaying /> */}
               <Element name="resume">
-                <MyResume />
+                <MyResume resumeElementRef={resumeElementRef}/>
               </Element>
-              <MySkills />
               <Element name="portfolio">
-                <Portfolio />
+                <Portfolio portfolioElementRef={portfolioElementRef} />
               </Element>
               <Element name="contact">
-                <CredentialAndForm />
+                <CredentialAndForm contactElementRef={contactElementRef} />
               </Element>
             </div>
             <Footer />
