@@ -4,9 +4,9 @@ import ImgContainer from './cards/imgContainer'
 import { Col, Divider, Row } from 'antd';
 import { portfolioData } from '../assets/portfolioData';
 
-const Portfolio = () => {
+const Portfolio = ({portfolioElementRef}) => {
     return (
-        <div className='portfolioContainer'>
+        <div className='portfolioContainer' ref={portfolioElementRef}>
             <h2 className='portfolioHeading'><span>Port</span>folio</h2>
             <div className="rulers">
                 <hr className="leftRuler" />
@@ -24,11 +24,8 @@ const Portfolio = () => {
                             return <ImgContainer key={i} name={val.name} description={val.description} imgSrc={val.imgSrc} websiteURL={val.websiteURL}/>
                         })}
                     </Row>
-                    
                 </div>
-
             </div>
-
         </div>
     )
 }

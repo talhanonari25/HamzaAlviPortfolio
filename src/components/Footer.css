@@ -1,9 +1,9 @@
 .footer{
     background-color: black;
     color: white;
-    width: 80vw;
+    width: 90vw;
     margin-bottom: 5%;
-    max-width: 1200px;
+    max-width: 1400px;
 }
 
 .inner-footer-container{
@@ -41,12 +41,6 @@
     }
     .inner-footer-container div{
         height: 3rem;
-    }
-}
-
-@media screen and (width < 600px) {
-    .footer{
-      width: 90%;
     }
 }
 

@@ -148,18 +148,21 @@
   justify-content: center;
   position: relative;
   z-index: 2;
+  transition: transform 0.6s ease-out;
 }
 
 .exp-card-container.left {
   justify-content: flex-start;
-  margin-left: 20px;
+  margin-left: 8rem;
+  transform: translateX(-615px)
 }
 
 .exp-card-container.right {
   justify-content: flex-end;
-  margin-right: 40px;
+  margin-right: 8rem;
   margin-left: 0px;
   padding-left: 0px;
+  transform: translateX(615px)
 }
 
 .speech-bubble {
@@ -221,6 +224,16 @@
 @media screen and (width < 920px) {
     .speech-bubble{
         max-width: 250px;
+    }
+}
+
+@media screen and (width < 820px) {
+    .exp-card-container.left {
+        margin-left: 7rem;
+    }
+
+    .exp-card-container.right {
+        margin-right: 7rem;
     }
 }
 

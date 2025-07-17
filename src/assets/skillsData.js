@@ -4,20 +4,16 @@ export const data = [
         imgSrc: "../src/assets/react.svg"
     },
     {
-        name: "HUBSPOT",
-        imgSrc: "../src/assets/whatIDoIcons/hubspot.png"
-    },
-    {
-        name: "RUBY ON RAILS",
-        imgSrc: "../src/assets/whatIDoIcons/rails.png"
-    },
-    {
         name: "NODE",
         imgSrc: "../src/assets/whatIDoIcons/node.svg"
     },
     {
-        name: "EXPRESS",
+        name: "Express",
         imgSrc: "../src/assets/whatIDoIcons/express.png"
+    },
+    {
+        name: "HUBSPOT",
+        imgSrc: "../src/assets/whatIDoIcons/hubspot.png"
     },
     {
         name: "NEXT",
@@ -26,5 +22,9 @@ export const data = [
     {
         name: "NEST",
         imgSrc: "../src/assets/whatIDoIcons/nest.svg"
+    },
+    {
+        name: "RUBY ON RAILS",
+        imgSrc: "../src/assets/whatIDoIcons/rails.png"
     },
 ]

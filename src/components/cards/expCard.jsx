@@ -1,11 +1,13 @@
 import { Card } from "antd";
+import { useInView } from 'react-intersection-observer';
 
-const ExpCard = ({ timeSpan, designation, mainData, index, position }) => {
+const ExpCard = ({ timeSpan, designation, mainData, index, position, inView}) => {
 
   return (
     <div
       className={`exp-card-container ${position}`}
       style={{
+        transform: inView ? "translateX(0px)" : undefined,
         marginTop: index === 0 ? "60px" : "40px",
       }}
     >

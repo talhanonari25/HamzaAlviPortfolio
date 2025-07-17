@@ -47,3 +47,12 @@
 .date img, .number img, .email img, .location img{
     margin-right: 5px;
 }
+
+@media screen and (width < 500px) {
+    .name, .occupation{
+        font-size: 1.25rem;
+    }
+    .greeting{
+        font-size: 0.75rem;
+    }
+}
