@@ -1,7 +1,5 @@
 import React from "react";
 import { Col, Divider, Row } from "antd";
-import img from "../../assets/containImg.jpg";
-
 const style = { padding: "8px 0" };
 
 const imgContainer = ({ name, description, imgSrc, websiteURL }) => {

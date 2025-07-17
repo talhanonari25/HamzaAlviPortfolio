@@ -1,32 +1,38 @@
+import JungleBee from "../assets/website-images/junglebee.png";
+import GoPainting from "../assets/website-images/goPainting.png";
+import PartnersDogs from "../assets/website-images/partnerDogs.png";
+import Prodege from "../assets/website-images/prodege.png";
+import UpcomingEvents from "../assets/website-images/upcomingEvents.png";
+
 export const portfolioData = [
     {
         name: 'Jungle Bee',
         description: 'booking website',
-        imgSrc: "../src/assets/website-images/junglebee.png",
+        imgSrc: JungleBee,
         websiteURL: "https://junglebee.com/"
     },
     {
         name: 'Go Painting',
         description: 'painting services',
-        imgSrc: "../src/assets/website-images/goPainting.png",
+        imgSrc: GoPainting,
         websiteURL: "https://gopainting.com/"
     },
     {
         name: 'Partners Dogs',
         description: 'dog training',
-        imgSrc: "../src/assets/website-images/partnerDogs.png",
+        imgSrc: PartnersDogs,
         websiteURL: "https://partnersdogs.com/"
     },
     {
         name: 'Prodege',
         description: 'marketing website',
-        imgSrc: "../src/assets/website-images/prodege.png",
+        imgSrc: Prodege,
         websiteURL: "https://www.prodege.com/"
     },
     {
         name: 'Upcoming Events',
         description: 'Event booking website',
-        imgSrc: "../src/assets/website-images/upcomingEvents.png",
+        imgSrc: UpcomingEvents,
         websiteURL: "https://www.upcomingevents.com/"
     },
 ]

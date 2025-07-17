@@ -1,30 +1,38 @@
+import react from "./whatIDoIcons/react.png";
+import node from "./whatIDoIcons/node.png";
+import express from "./whatIDoIcons/express.png";
+import hubspot from "./whatIDoIcons/hubspot.png";
+import next from "./whatIDoIcons/next.png";
+import nest from "./whatIDoIcons/nest.png";
+import rails from "./whatIDoIcons/rails.png";
+
 export const data = [
     {
         name: "REACT",
-        imgSrc: "../src/assets/whatIDoIcons/react.png"
+        imgSrc: react
     },
     {
         name: "NODE",
-        imgSrc: "../src/assets/whatIDoIcons/node.png"
+        imgSrc: node
     },
     {
         name: "Express",
-        imgSrc: "../src/assets/whatIDoIcons/express.png"
+        imgSrc: express
     },
     {
         name: "HUBSPOT",
-        imgSrc: "../src/assets/whatIDoIcons/hubspot.png"
+        imgSrc: hubspot
     },
     {
         name: "NEXT",
-        imgSrc: "../src/assets/whatIDoIcons/next.png"
+        imgSrc: next
     },
     {
         name: "NEST",
-        imgSrc: "../src/assets/whatIDoIcons/nest.png"
+        imgSrc: nest
     },
     {
         name: "RUBY ON RAILS",
-        imgSrc: "../src/assets/whatIDoIcons/rails.png"
+        imgSrc: rails
     },
 ]
