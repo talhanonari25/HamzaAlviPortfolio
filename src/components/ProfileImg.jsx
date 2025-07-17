@@ -1,10 +1,11 @@
 import "./ProfileImg.css";
+import hamzaAlvi from "../assets/hamza_alvi.png";
 import React from "react";
 
 const ProfileImg = () => {
   return (
     <div className="profileImgContainer" style={{ width: "auto" }}>
-      <img src="/logo.png" alt="" className="profileImg" />
+      <img src={hamzaAlvi} alt="" className="profileImg" />
       <div className="social-icons">
         <a
           href="https://www.facebook.com/hamza.alvi.9"
