@@ -1,11 +1,11 @@
 export const data = [
     {
         name: "REACT",
-        imgSrc: "../src/assets/react.svg"
+        imgSrc: "../src/assets/whatIDoIcons/react.png"
     },
     {
         name: "NODE",
-        imgSrc: "../src/assets/whatIDoIcons/node.svg"
+        imgSrc: "../src/assets/whatIDoIcons/node.png"
     },
     {
         name: "Express",
@@ -21,7 +21,7 @@ export const data = [
     },
     {
         name: "NEST",
-        imgSrc: "../src/assets/whatIDoIcons/nest.svg"
+        imgSrc: "../src/assets/whatIDoIcons/nest.png"
     },
     {
         name: "RUBY ON RAILS",

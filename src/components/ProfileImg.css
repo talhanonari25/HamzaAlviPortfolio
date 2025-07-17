@@ -5,12 +5,15 @@
     width: fit-content;
     align-self: center;
     margin-left: 10px;
+    height: 45vh;
     position: relative;
 }
 
 .profileImg{
-    height: 45vh; 
-    width: 280px;   
+    height: 45vh;
+    width: 280px;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
 }
 
 .social-icons{
@@ -18,8 +21,8 @@
     height: 1rem;
     width: 180px;
     height: 2.5rem !important;
-    left: -5px;
-    bottom: 10px;
+    left: 5px;
+    bottom: 5px;
     height: 60px;
     background-color: white;
     display: flex;
