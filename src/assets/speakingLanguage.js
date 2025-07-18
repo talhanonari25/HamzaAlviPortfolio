@@ -1,10 +1,10 @@
 export const speakingLanguage = [
     {
         name: "English",
-        completion: '90'
+        completion: '85'
     },
     {
         name: "Urdu",
-        completion: '80'
+        completion: '95'
     }
 ]

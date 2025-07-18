@@ -3,8 +3,6 @@ import { Typewriter } from 'react-simple-typewriter';
 import { Row, Col } from 'antd';
 import React from 'react'
 
-const style = { background: '#0092ff', padding: '8px 0' };
-
 const Bio = () => {
     return (
       <div className="bio">
@@ -39,17 +37,17 @@ const Bio = () => {
           </div>
         </div>
         <hr className="bioRuler" style={{width: '100%'}} />
-        <Row gutter={{ xs: 2, sm: 16, md: 24, lg: 32 }} style={{width: '100%'}}>
-          <Col className="gutter-row" span={6} xs={24} sm={24} md={18} lg={12} xl={8}>
+        <Row  style={{width: '100%'}}>
+          <Col className="gutter-row" span={6} xs={24} sm={24} md={12} lg={4} xl={4}>
             <h5 className='date'><img src="/icons/calendar.svg" alt="" />06.10.1998</h5>
           </Col>
-          <Col className="gutter-row" span={6} xs={24} sm={24} md={18} lg={12} xl={8}>
+          <Col className="gutter-row" span={6} xs={24} sm={24} md={12} lg={6} xl={6}>
             <h5 className='number'><img src="/icons/whatsapp.svg" alt="" />+923-334-330-550</h5>
           </Col>
-          <Col className="gutter-row" span={6} xs={24} sm={24} md={18} lg={12} xl={8}>
+          <Col className="gutter-row" span={6} xs={24} sm={24} md={12} lg={8} xl={8}>
             <h5 className='email'><img src="/icons/atTheRate.png" style={{ width: "24px" }} alt="" />m.hamzaalvi719@gmail.com</h5>
           </Col>
-          <Col className="gutter-row" span={6} xs={24} sm={24} md={18} lg={12} xl={8}>
+          <Col className="gutter-row" span={6} xs={24} sm={24} md={12} lg={6} xl={6}>
             <h5 className='location'><img src="/icons/location.svg" alt="" />Lahore, Pakistan</h5>
           </Col>
         </Row>
