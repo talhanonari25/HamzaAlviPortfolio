@@ -102,24 +102,14 @@ const CredentialAndForm = ({ contactElementRef }) => {
             <p className="info-title">Write me</p>
             <p className="form-email-info">m.hamzaalvi719@gmail.com</p>
           </div>
-          <div className="form-address">
+          {/* <div className="form-address">
             <p className="info-title">My office</p>
             <p className="form-address-info">Askari 11, Lahore</p>
-          </div>
+          </div> */}
           <div className="form-social">
-            <p className="info-title">Follow us</p>
+            <p className="info-title" style={{marginBottom: "0px"}}>Follow us</p>
             <div className="form-social-info" style={{ width: "70%" }}>
               <ul>
-                <li>
-                  <a
-                    href="https://www.facebook.com/hamza.alvi.9"
-                    target="_blank"
-                    className="credential-link"
-                    style={{ textDecoration: "none", color: "white" }}
-                  >
-                    Facebook
-                  </a>
-                </li>
                 <li>
                   <a
                     href="https://www.linkedin.com/in/hamza-alvi-378baa1ab"
@@ -127,7 +117,7 @@ const CredentialAndForm = ({ contactElementRef }) => {
                     className="credential-link"
                     style={{ textDecoration: "none", color: "white" }}
                   >
-                    Linked In
+                    LinkedIn
                   </a>
                 </li>
                 <li>

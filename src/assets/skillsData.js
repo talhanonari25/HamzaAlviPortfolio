@@ -8,10 +8,6 @@ import rails from "./whatIDoIcons/rails.png";
 
 export const data = [
     {
-        name: "REACT",
-        imgSrc: react
-    },
-    {
         name: "NODE",
         imgSrc: node
     },
@@ -22,6 +18,10 @@ export const data = [
     {
         name: "HUBSPOT",
         imgSrc: hubspot
+    },
+    {
+        name: "REACT",
+        imgSrc: react
     },
     {
         name: "NEXT",

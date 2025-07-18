@@ -9,6 +9,8 @@
     display: block;
     text-align: left;
     margin-left: 20px;
+    width: 60%;
+    margin-right: 5px;
 }
 
 .name{
@@ -54,5 +56,8 @@
     }
     .greeting{
         font-size: 0.75rem;
+    }
+    .bio{
+        width: 100%;
     }
 }

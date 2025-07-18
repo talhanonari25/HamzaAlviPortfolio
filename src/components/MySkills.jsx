@@ -1,8 +1,9 @@
 import React, {useEffect} from "react";
 import "./MySkills.css";
 import { Col, Divider, Row } from "antd";
-import ProgressBar from "./cards/progressBar";
-import { languageData } from "../assets/languageData";
+// import ProgressBar from "./cards/progressBar";
+// import { languageData } from "../assets/languageData";
+import {speakingLanguage} from '../assets/speakingLanguage'
 import LineProgressBar from "./cards/lineProgressBar";
 import { cloudData } from "../assets/cloudData";
 import { codingData } from "../assets/codingData";
@@ -29,7 +30,7 @@ const MySkills = () => {
         <span>My Skills</span>
       </h2>
       <div className="skillContainer">
-        <div className="skills">
+        {/* <div className="skills">
           <div style={{width: '10%'}} className="skillGridItem prg-lang-container">
               <h2 className="skillsCategory">PROGRAMMING LANGUAGE</h2>
             </div>
@@ -47,10 +48,72 @@ const MySkills = () => {
             })}
           </Row>
         </div>
-        <hr className="bioRuler" style={{ margin: "40px 40px" }} />
+        <hr className="bioRuler" style={{ margin: "40px 40px" }} /> */}
 
-        <Row gutter={25} className="line-progress-bar-grid-container">
+        <Row gutter={15} className="line-progress-bar-grid-container">
           <Col className="gutter-row" span={4} xs={4} sm={4} md={3} lg={3}>
+            <div
+              style={style}
+              className="skillGridItem prg-lang-container small-container-skills "
+            >
+              <h2 className="skillsCategory">Cloud Services</h2>
+            </div>
+
+            <div
+              style={style}
+              className="skillGridItem prg-lang-container small-container-skills "
+            >
+              <h2 className="skillsCategory">Languages</h2>
+            </div>
+          </Col>
+          <Col className="gutter-row" span={9} xs={20} sm={18} md={9} lg={9}>
+            <div
+              style={{ padding: "8px 0" }}
+              className="skillGridItem small-container-skills"
+            >
+              {cloudArr}
+            </div>
+
+            <div
+              style={{ padding: "8px 0" }}
+              className="skillGridItem small-container-skills"
+            >
+              {speakingLanguage.map((val, i) => {
+                return (
+                  <LineProgressBar
+                    name={val.name}
+                    key={i}
+                    percentage={val.completion}
+                  />
+                );
+              })}
+            </div>
+          </Col>
+          <Col
+            className="gutter-row codingSection"
+            span={2}
+            xs={4}
+            sm={4}
+            md={3}
+            lg={3}
+          >
+            <div style={style} className="skillGridItem">
+              <h2 className="skillsCategory">CODING</h2>
+            </div>
+          </Col>
+          <Col
+            className="gutter-row codingSection"
+            span={9}
+            xs={20}
+            sm={18}
+            md={9}
+            lg={9}
+          >
+            <div style={{ padding: "8px 0" }} className="skillGridItem">
+              {codignArr}
+            </div>
+          </Col>
+          {/* <Col className="gutter-row" span={4} xs={4} sm={4} md={3} lg={3}>
             <div style={style} className="skillGridItem prg-lang-container">
               <h2 className="skillsCategory">Cloud Services</h2>
             </div>
@@ -59,17 +122,7 @@ const MySkills = () => {
             <div style={{ padding: "8px 0" }} className="skillGridItem">
               {cloudArr}
             </div>
-          </Col>
-          <Col className="gutter-row codingSection" span={2} xs={4} sm={4} md={3} lg={3}>
-            <div style={style} className="skillGridItem">
-              <h2 className="skillsCategory">CODING</h2>
-            </div>
-          </Col>
-          <Col className="gutter-row codingSection" span={9} xs={18} sm={18} md={9} lg={9}>
-            <div style={{ padding: "8px 0" }} className="skillGridItem">
-              {codignArr}
-            </div>
-          </Col>
+          </Col> */}
         </Row>
       </div>
     </div>
