@@ -71,9 +71,17 @@
     width: 75%;
 }
 
+.small-container-skills{
+    height: 50%;
+}
+
 @media screen and (width < 355px) {
     .lineProgressBar-container{
-        width: 58%;
+        width: 76%;
+    }
+
+    .skillContainer{
+        padding-left: 30px;
     }
 }
 
@@ -94,7 +102,7 @@
 
 @media screen and (width < 768px) {
     .codingSection{
-        margin-top: 70px;
+        margin-top: 20px;
     }
     .prg-lang-container{
         margin-left: 20px;

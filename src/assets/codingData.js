@@ -1,4 +1,5 @@
 export const codingData = [
+    
     {
         name: "NODE",
         completion: '90'
@@ -6,10 +7,6 @@ export const codingData = [
     {
         name: "EXPRESS",
         completion: '80'
-    },
-    {
-        name: "REACT JS",
-        completion: '90'
     },
     {
         name: "HUBSPOT",
@@ -26,6 +23,22 @@ export const codingData = [
     {
         name: "RUBY ON RAILS",
         completion: '90'
+    },
+    {
+        name: "REACT JS",
+        completion: '90'
+    },
+    {
+        completion: '80',
+        name: 'MONGO DB'
+    },
+    {
+        completion: '75',
+        name: 'POSTGRESSQL'
+    },
+    {
+        completion: '90',
+        name: 'RUBY'
     },
     {
         name: "RESPEC",

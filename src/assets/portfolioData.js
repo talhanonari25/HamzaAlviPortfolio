@@ -3,6 +3,7 @@ import GoPainting from "../assets/website-images/goPainting.png";
 import PartnersDogs from "../assets/website-images/partnerDogs.png";
 import Prodege from "../assets/website-images/prodege.png";
 import UpcomingEvents from "../assets/website-images/upcomingEvents.png";
+import Sincera from '../assets/website-images/Sincera.png'
 
 export const portfolioData = [
     {
@@ -34,5 +35,11 @@ export const portfolioData = [
         description: 'Event booking website',
         imgSrc: UpcomingEvents,
         websiteURL: "https://www.upcomingevents.com/"
+    },
+    {
+        name: 'Upcoming Events',
+        description: 'New way for ecosystem',
+        imgSrc: Sincera,
+        websiteURL: "https://app.sincera.io/"
     },
 ]
